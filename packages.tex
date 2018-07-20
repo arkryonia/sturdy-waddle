@@ -1,0 +1,58 @@
+\usepackage{lipsum,blindtext}
+\usepackage{subfiles}
+\usepackage{graphicx}\graphicspath{{images/}{../images/}}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel,varioref}
+\usepackage[svgnames,table]{xcolor}
+\usepackage[allcolors=HBlue]{hyperref}
+\usepackage[round,comma,sort&compress]{natbib}
+\usepackage{fontspec}
+%\setmainfont{}
+\setsansfont{Fira Sans}
+\usepackage{pgfgantt}
+\usepackage{tabularx}
+\usepackage[tocflat]{tocstyle}
+\usepackage[xindy, order=letter, acronym]{glossaries}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+
+\hypersetup{
+	urlcolor=HBlue,
+	dvips,
+	backref=true, %permet d'ajouter des liens dans...
+	pagebackref=true,%...les bibliographies
+	hyperindex=true, %ajoute des liens dans les index.
+	colorlinks=true, %colorise les liens
+	breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+	linkcolor= HBlue, %couleur des liens internes
+	bookmarks=true, %créé des signets pour Acrobat
+	bookmarksopen=true
+} 
+
+
+\KOMAoptions{%
+	,parskip=half
+	,DIV=10
+	,fontsize=11
+	,numbers=enddot
+	,headings=small
+}
+
+\newcommand{\mylinebreak}{\newline\hspace*{11pt}}% 
+
+\makeglossaries
+
+%\RedeclareSectionCommand[
+%beforeskip=-1sp,
+%afterskip=0.01\baselineskip]{section}
+%
+%\RedeclareSectionCommand[
+%beforeskip=-1sp,
+%afterskip=0.01\baselineskip]{subsection}
+%
+%\RedeclareSectionCommand[
+%beforeskip=-1sp,
+%afterskip=0.01\baselineskip]{paragraph}
